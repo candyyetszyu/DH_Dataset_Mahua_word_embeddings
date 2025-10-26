@@ -186,7 +186,7 @@ Website: [nyhwong.com](https://nyhwong.com) | [ORCID](https://orcid.org/)
 ### Contributed by
 
 **Ye Tsz Yu Candy**  
-Bachelor of Arts 
-Majors in Chinese Language and Literature, and Computer Science
-The University of Hong Kong 
+Bachelor of Arts  
+Majors in Chinese Language and Literature, and Computer Science  
+The University of Hong Kong  
 Email: u3607570@connect.hku.hk
