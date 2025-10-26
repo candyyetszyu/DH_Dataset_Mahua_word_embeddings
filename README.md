@@ -164,4 +164,27 @@ This dataset is provided for academic and research purposes only. Please contact
 
 ## Citation
 
+
 If you use this dataset, please cite the project or contact the author for more information.
+
+# Project Author
+
+**Nicholas Y. H. Wong**  
+Assistant Professor, School of Chinese  
+The University of Hong Kong  
+Website: [nyhwong.com](https://nyhwong.com) | [ORCID](https://orcid.org/)  
+[Project Book: Daughters](https://balestier.com/books/literature/daughters)
+
+# Contributed by
+
+**Ye Tsz Yu Candy**  
+Bachelor of Arts (Majors in Chinese Language and Literature, and Computer Science)  
+Email: u3607570@connect.hku.hk
+
+# Submission Context
+
+This dataset will be submitted for:
+
+**Call for Papers: The Journal of Open Humanities Data (JOHD) Special Collection on Benchmarking in Digital Humanities**
+
+Edited by Dr Jenny C.Y. Kwok and Dr. Liam Jianliang Gao, this collection explores the critical role of benchmarking in advancing humanities research, highlighting how the creation of shared evaluation data and systematic comparison of tools can drive progress.
