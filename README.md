@@ -165,4 +165,3 @@ This dataset is provided for academic and research purposes only. Please contact
 ## Citation
 
 If you use this dataset, please cite the project or contact the author for more information.
-# DH_Dataset_Mahua_word_embeddings

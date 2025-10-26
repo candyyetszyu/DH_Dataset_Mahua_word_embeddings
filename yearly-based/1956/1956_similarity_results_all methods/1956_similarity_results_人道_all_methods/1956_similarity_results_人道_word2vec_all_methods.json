@@ -1,0 +1,312 @@
+{
+  "query_word": "人道",
+  "timestamp": "2025-10-23T18:03:57.678712",
+  "results": {
+    "cosine": {
+      "containing_word_analysis": [
+        {
+          "word": "慘無人道",
+          "similar_words": [
+            [
+              "地理",
+              0.9667962789535522
+            ],
+            [
+              "子弟",
+              0.9662947654724121
+            ],
+            [
+              "西方",
+              0.9662603139877319
+            ],
+            [
+              "各族",
+              0.965569257736206
+            ],
+            [
+              "羣起",
+              0.9655156135559082
+            ],
+            [
+              "三大",
+              0.9650328159332275
+            ],
+            [
+              "建設",
+              0.9650291204452515
+            ],
+            [
+              "化爲",
+              0.9649783372879028
+            ],
+            [
+              "留戀",
+              0.9649692177772522
+            ],
+            [
+              "文化節",
+              0.9648312330245972
+            ]
+          ]
+        }
+      ],
+      "method_description": "Measures the cosine of the angle between vectors. Values range from -1 to 1. for words containing \"人道\"",
+      "note": "Showing similarity analysis for ALL 1 words containing \"人道\" (top 10 results each) since exact match not found"
+    },
+    "euclidean": {
+      "containing_word_analysis": [
+        {
+          "word": "慘無人道",
+          "similar_words": [
+            [
+              "大脚",
+              0.9916625022888184
+            ],
+            [
+              "論理",
+              0.9913181662559509
+            ],
+            [
+              "不聞不問",
+              0.9910721182823181
+            ],
+            [
+              "寄錢",
+              0.9909795522689819
+            ],
+            [
+              "籌募",
+              0.9908542633056641
+            ],
+            [
+              "差一點兒",
+              0.9908403158187866
+            ],
+            [
+              "準字",
+              0.9908266663551331
+            ],
+            [
+              "次之",
+              0.9908064603805542
+            ],
+            [
+              "指斥",
+              0.9908013343811035
+            ],
+            [
+              "愛用",
+              0.9907947182655334
+            ]
+          ]
+        }
+      ],
+      "method_description": "Based on Euclidean distance, converted to similarity. Higher values indicate closer vectors. for words containing \"人道\"",
+      "note": "Showing similarity analysis for ALL 1 words containing \"人道\" (top 10 results each) since exact match not found"
+    },
+    "manhattan": {
+      "containing_word_analysis": [
+        {
+          "word": "慘無人道",
+          "similar_words": [
+            [
+              "大脚",
+              0.9920009530230894
+            ],
+            [
+              "論理",
+              0.9912474620455435
+            ],
+            [
+              "不聞不問",
+              0.9909419685406339
+            ],
+            [
+              "次之",
+              0.9908748870089041
+            ],
+            [
+              "指斥",
+              0.9908554833947308
+            ],
+            [
+              "準字",
+              0.9908398877201938
+            ],
+            [
+              "賣書",
+              0.9907788855685363
+            ],
+            [
+              "下到",
+              0.9907761377614146
+            ],
+            [
+              "寄錢",
+              0.990772313076375
+            ],
+            [
+              "解剖",
+              0.9907430285679338
+            ]
+          ]
+        }
+      ],
+      "method_description": "Based on Manhattan (L1) distance, converted to similarity. Sum of absolute differences. for words containing \"人道\"",
+      "note": "Showing similarity analysis for ALL 1 words containing \"人道\" (top 10 results each) since exact match not found"
+    },
+    "jaccard": {
+      "containing_word_analysis": [
+        {
+          "word": "慘無人道",
+          "similar_words": [
+            [
+              "台子",
+              0.9038461538461539
+            ],
+            [
+              "本年",
+              0.9019607843137255
+            ],
+            [
+              "油醬",
+              0.9019607843137255
+            ],
+            [
+              "西風",
+              0.9019607843137255
+            ],
+            [
+              "努力學習",
+              0.9
+            ],
+            [
+              "承允",
+              0.9
+            ],
+            [
+              "歇工",
+              0.8979591836734694
+            ],
+            [
+              "全裸",
+              0.8867924528301887
+            ],
+            [
+              "知名",
+              0.8867924528301887
+            ],
+            [
+              "孤兒",
+              0.8867924528301887
+            ]
+          ]
+        }
+      ],
+      "method_description": "Measures similarity between binary vectors. Good for presence/absence patterns. for words containing \"人道\"",
+      "note": "Showing similarity analysis for ALL 1 words containing \"人道\" (top 10 results each) since exact match not found"
+    },
+    "pearson": {
+      "containing_word_analysis": [
+        {
+          "word": "慘無人道",
+          "similar_words": [
+            [
+              "地理",
+              0.9666681824258546
+            ],
+            [
+              "子弟",
+              0.9660396428253688
+            ],
+            [
+              "西方",
+              0.965947717420007
+            ],
+            [
+              "羣起",
+              0.965759583521004
+            ],
+            [
+              "各族",
+              0.9654114386266922
+            ],
+            [
+              "化爲",
+              0.9649901449806032
+            ],
+            [
+              "建設",
+              0.9648932557057086
+            ],
+            [
+              "三大",
+              0.9648783233082646
+            ],
+            [
+              "文化節",
+              0.9647543412052919
+            ],
+            [
+              "殖民地",
+              0.9647315996121739
+            ]
+          ]
+        }
+      ],
+      "method_description": "Measures linear correlation between vectors. Values range from -1 to 1. for words containing \"人道\"",
+      "note": "Showing similarity analysis for ALL 1 words containing \"人道\" (top 10 results each) since exact match not found"
+    },
+    "spearman": {
+      "containing_word_analysis": [
+        {
+          "word": "慘無人道",
+          "similar_words": [
+            [
+              "像貌",
+              0.9593759375937593
+            ],
+            [
+              "地理",
+              0.9592199219921991
+            ],
+            [
+              "優秀",
+              0.9585598559855985
+            ],
+            [
+              "吸取",
+              0.9576357635763575
+            ],
+            [
+              "漫漫",
+              0.9575757575757575
+            ],
+            [
+              "堅固",
+              0.9575037503750374
+            ],
+            [
+              "西方",
+              0.9574797479747974
+            ],
+            [
+              "首席",
+              0.9572517251725171
+            ],
+            [
+              "無疑",
+              0.9569996999699969
+            ],
+            [
+              "化爲",
+              0.9569756975697569
+            ]
+          ]
+        }
+      ],
+      "method_description": "Measures monotonic relationship using rank correlation. Values range from -1 to 1. for words containing \"人道\"",
+      "note": "Showing similarity analysis for ALL 1 words containing \"人道\" (top 10 results each) since exact match not found"
+    }
+  }
+}
