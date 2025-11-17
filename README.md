@@ -10,6 +10,10 @@ The project seeks to move beyond traditional frameworks—Malayan (national assi
 
 A key research challenge is how to tokenize and analyze the concept of "humanism," which appears in various Chinese translations (e.g., renwen zhuyi, rendao zhuyi, renben zhuyi). In the journal Chao Foon, writers may use alternative terms containing "ren" (human/person). To address this, the project leverages BERT and other word embedding models to better capture contextual meanings and semantic nuances.
 
+## Funding Statement
+
+This research, as part of the Early Career Scheme (ECS) project, “Visualizing Keywords in Malaysian-Chinese Literary History via Digital Humanities Methods," was funded by the Research Grants Council (RGC) of the Hong Kong Special Administrative Region, China, under Grant No. 27609122. 
+
 ## Submission Context
 
 This dataset will be submitted for:
@@ -180,8 +184,7 @@ If you use this dataset, please cite the project or contact the author for more 
 **Nicholas Y. H. Wong**  
 Assistant Professor, School of Chinese  
 The University of Hong Kong  
-Website: [nyhwong.com](https://nyhwong.com) | [ORCID](https://orcid.org/)  
-[Project Book: Daughters](https://balestier.com/books/literature/daughters)
+Website: [nyhwong.com](https://nyhwong.com) | [ORCID](https://orcid.org/0000-0003-3953-5179)  
 
 ### Contributed by
 
@@ -190,3 +193,9 @@ Bachelor of Arts
 Majors in Chinese Language and Literature, and Computer Science  
 The University of Hong Kong  
 Email: u3607570@connect.hku.hk
+
+**Allie Xiang Haiyin**  
+Bachelor of Arts  
+Majors in Translation and Comparative Literature; Minor in Art History  
+The University of Hong Kong  
+Vetting of OCR-ed texts
