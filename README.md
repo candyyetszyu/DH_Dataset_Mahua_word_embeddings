@@ -181,22 +181,24 @@ If you use this dataset, please cite the project or contact the author for more 
 
 ### Project Author
 
-**Nicholas Y. H. Wong**
-Assistant Professor, School of Chinese
-The University of Hong Kong
-Email: nyhwong@hku.hk
-Website: [nyhwong.com](https://nyhwong.com) | [ORCID](https://orcid.org/0000-0003-3953-5179)  
+**Nicholas Y. H. Wong**  
+Assistant Professor, School of Chinese  
+The University of Hong Kong  
+Email: nyhwong@hku.hk  
+Website: [nyhwong.com](https://nyhwong.com) | [ORCID: 0000-0003-3953-5179](https://orcid.org/0000-0003-3953-5179)
 
 ### Contributed by
 
-**Ye Tsz Yu Candy**  
+**Ye Tsz Yu (Candy)**  
 Bachelor of Arts  
-Majors in Chinese Language and Literature, and Computer Science  
+Majors: Chinese Language and Literature, Computer Science  
 The University of Hong Kong  
-Email: u3607570@connect.hku.hk
+Email: u3607570@connect.hku.hk  
+Role: Visualization generation and dataset creation
 
-**Allie Xiang Haiyin**  
+**Allie Xiang (Haiyin)**  
 Bachelor of Arts  
-Majors in Translation and Comparative Literature; Minor in Art History  
+Majors: Translation and Comparative Literature  
+Minor: Art History  
 The University of Hong Kong  
-Vetting of OCR-ed texts
+Role: Text vetting and OCR validation
