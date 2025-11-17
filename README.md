@@ -181,9 +181,10 @@ If you use this dataset, please cite the project or contact the author for more 
 
 ### Project Author
 
-**Nicholas Y. H. Wong**  
-Assistant Professor, School of Chinese  
-The University of Hong Kong  
+**Nicholas Y. H. Wong**
+Assistant Professor, School of Chinese
+The University of Hong Kong
+Email: nyhwong@hku.hk
 Website: [nyhwong.com](https://nyhwong.com) | [ORCID](https://orcid.org/0000-0003-3953-5179)  
 
 ### Contributed by
