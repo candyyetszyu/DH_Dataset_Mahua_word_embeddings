@@ -189,14 +189,14 @@ Website: [nyhwong.com](https://nyhwong.com) | [ORCID: 0000-0003-3953-5179](h
 
 ### Contributed by
 
-**Ye Tsz Yu (Candy)**  
+**Ye Tsz Yu Candy**  
 Bachelor of Arts  
 Majors: Chinese Language and Literature, Computer Science  
 The University of Hong Kong  
 Email: u3607570@connect.hku.hk  
 Role: Visualization generation and dataset creation
 
-**Allie Xiang (Haiyin)**  
+**Allie Xiang Haiyin**  
 Bachelor of Arts  
 Majors: Translation and Comparative Literature  
 Minor: Art History  
