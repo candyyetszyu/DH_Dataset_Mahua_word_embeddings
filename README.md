@@ -115,6 +115,14 @@ Edited by Dr Jenny C.Y. Kwok and Dr. Liam Jianliang Gao, this collection explore
 		1959_04_1_jf78_model_data_fasttext.json
 		1959_04_1_jf78_model_data_word2vec_fasttext_bert.json
 		1959_04_1_jf78_model_data_word2vec.json
+	1959_04_1_jf78_similarity_results_word2vec_all networks/
+		all_networks_人_1756178022683/
+		all_networks_人文_1756178094172/
+		all_networks_人文主義_1756178317886/
+		all_networks_人本_1756178169153/
+		all_networks_人本主義_1756178383375/
+		all_networks_人道_1756178228573/
+		all_networks_人道主義_1756178517211/
 
 1959_05_1_jf79/
 	1959_05_1_jf79_embedding Visualization_2D_3D/
