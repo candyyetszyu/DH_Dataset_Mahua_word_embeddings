@@ -2,13 +2,32 @@
 
 ## Overview
 
-This dataset contains JSON and CSV files derived from the Mahua (Malayan Chinese) literary journal corpus, organized primarily by year. Most data files are structured on a yearly basis, with the exception of `1959_04_1_jf78` and `1959_05_1_jf79`, which are issued-based.
+This dataset contains text files from the Mahua (Malayan Chinese) literary journal corpus, organized by year from 1955 to 1961. The corpus includes original text files and processed data for word embedding analysis, with some specialized folders for rationality-related content and yearly-based model data.
+
+## Project Website
+
+For interactive visualizations and additional resources, visit: **https://dh-dataset-mahua-word-embeddings-lm.vercel.app/**
 
 ## Project Aim
 
-The project seeks to move beyond traditional frameworks—Malayan (national assimilation) and Chinese (diasporic or linguistic)—in analyzing the Mahua literary journal. Instead, it explores possible connections to Third World humanism, engaging with broader global debates such as French decolonization.
+The project seeks to move beyond traditional frameworks—Malayan (national assimilation) and Chinese (diasporic or linguistic)—in analyzing the Mahua literary journal. Instead, it explores conceptual and thematic connections through digital humanities methods, engaging with broader literary and cultural debates.
 
-A key research challenge is how to tokenize and analyze the concept of "humanism," which appears in various Chinese translations (e.g., renwen zhuyi, rendao zhuyi, renben zhuyi). In the journal Chao Foon, writers may use alternative terms containing "ren" (human/person). To address this, the project leverages BERT and other word embedding models to better capture contextual meanings and semantic nuances.
+A key research focus is the computational analysis of important concepts and keywords as they appear in various forms throughout the journal. The project leverages BERT and other word embedding models to better capture contextual meanings and semantic nuances across the literary corpus, enabling new insights into the evolution of ideas and themes over time.
+
+## Dataset Documentation Guide
+
+This dataset includes comprehensive documentation across four files to ensure reproducibility and facilitate reuse:
+
+### Core Documentation Files
+
+1. **[README.md](README.md)** (this file) - Overview, project context, and usage guidance
+2. **[DATA_STRUCTURE.md](DATA_STRUCTURE.md)** - Detailed breakdown of directory hierarchy, file naming conventions, coverage statistics, and known data anomalies
+3. **[PREPROCESSING_SPECIFICATIONS.md](PREPROCESSING_SPECIFICATIONS.md)** - Text preprocessing pipeline, tokenization methods, and statistical metadata for all model types
+4. **[MODEL_TRAINING_SPECIFICATIONS.md](MODEL_TRAINING_SPECIFICATIONS.md)** - Training parameters, configurations, and technical specifications for Word2Vec, FastText, and BERT models
+
+**For journal reviewers**: Start with this README for project context, then consult `DATA_STRUCTURE.md` for data coverage and quality information.
+
+**For researchers planning to reuse this dataset**: Review all four documentation files to understand the data structure, preprocessing decisions, and model configurations before beginning your analysis.
 
 ## Funding Statement
 
@@ -24,168 +43,190 @@ Edited by Dr Jenny C.Y. Kwok and Dr. Liam Jianliang Gao, this collection explore
 
 ## Dataset Structure
 
-- **Yearly Folders:** Contain embedding visualizations and model data for each year.
-- **Corpus Folder:** Contains the original text files for each issue.
-- **Special Issues:** `1959_04_1_jf78` and `1959_05_1_jf79` are organized by issue rather than year.
+This dataset is organized into three main components. For complete structural details, file naming conventions, coverage statistics, and data quality notes, see **[DATA_STRUCTURE.md](DATA_STRUCTURE.md)**.
 
-### Folder Structure
+- **corpus/:** Contains the original text files organized by year (1955-1961), with each file representing a specific half-month issue (1955–1958) or single monthly issue (1959 onward) following the `YYYY-MM-first|second-issue-XXX.txt` convention.
+- **rationality-related/:** Contains specialized folders for analysis of rationality-related content from specific issues (`1959_04_1_jf78` and `1959_05_1_jf79`), retained for historical traceability.
+- **yearly-based-model-data/:** Contains processed model data organized by year for embedding and analysis purposes.
 
+### Quick Reference: Coverage Summary
 
-### Yearly-based Structure Example (e.g., 1955, 1956, ...)
+| Year | Issues | Character Count | Notes |
+|------|--------|----------------|-------|
+| 1955 | 4 | 93,773 | Nov–Dec only |
+| 1956 | 24 | 647,956 | Complete coverage |
+| 1957 | 24 | 669,896 | Complete coverage |
+| 1958 | 21 | 617,044 | Missing Oct–Dec second halves |
+| 1959 | 12 | 431,252 | Single monthly issues |
+| 1960 | 12 | 386,075 | Single monthly issues |
+| 1961 | 1 | 32,315 | Jan only |
 
-#### Example: 1955 Yearly Folder
+*Full details available in [DATA_STRUCTURE.md](DATA_STRUCTURE.md)*
 
-```
-1955/
-	1955_embedding Visualization_2D_3D/
-		2D/
-		3D/
-	1955_model_data_word2vec_fasttext_bert/
-		1955_model_data_bert.json
-		1955_model_data_fasttext.json
-		1955_model_data_word2vec_fasttext_bert.json
-		1955_model_data_word2vec.json
-```
+## Data Processing and Models
 
-#### Example: 1956 Yearly Folder with Networking and Similarity Analysis
+This dataset provides three types of word embedding models trained on the corpus text. For comprehensive technical specifications, see **[MODEL_TRAINING_SPECIFICATIONS.md](MODEL_TRAINING_SPECIFICATIONS.md)** and **[PREPROCESSING_SPECIFICATIONS.md](PREPROCESSING_SPECIFICATIONS.md)**.
 
-```
-1956/
-	1956_embedding Visualization_2D_3D/
-		2D/
-		3D/
-	1956_model_data_word2vec_fasttext_bert/
-		1956_model_data_bert.json
-		1956_model_data_fasttext.json
-		1956_model_data_word2vec_fasttext_bert.json
-		1956_model_data_word2vec.json
-	1956_similarity_results_all methods/
-		1956_similarity_results_人_all_methods/
-		1956_similarity_results_人文_all_methods/
-		1956_similarity_results_人文主義_all_methods/
-		1956_similarity_results_人本_all_methods/
-		1956_similarity_results_人本主義_all_methods/
-		1956_similarity_results_人道_all_methods/
-		1956_similarity_results_人道主義_all_methods/
-	1956_similarity_results_all networks/
-		1956_similarity_results_人_all_networks/
-		1956_similarity_results_人文_all_networks/
-		1956_similarity_results_人文主義_all_networks/
-		1956_similarity_results_人本_all_networks/
-		1956_similarity_results_人本主義_all_networks/
-		1956_similarity_results_人道_all_networks/
-		1956_similarity_results_人道主義_all_networks/
-```
+### Available Models
 
-*Note: Only the 1956 folder contains networking and similarity analysis results for 7 keywords: 人, 人文, 人文主義, 人本, 人本主義, 人道, 人道主義.*
+1. **Word2Vec** - Traditional word embeddings using CBOW algorithm
+2. **FastText** - Subword-aware embeddings for better handling of Chinese morphology  
+3. **BERT** - Contextualized embeddings using pre-trained Chinese models
 
-### Issue-based Structure Example (e.g., 1959_04_1_jf78, 1959_05_1_jf79)
+### Preprocessing Pipeline
 
-```
-1959_04_1_jf78/
-	1959_04_1_jf78_embedding Visualization_2D_3D/
-		2D/
-			pca/
-				1959_04_1_jf78_2D_pca_multi_model_visualization.csv
-				1959_04_1_jf78_2D_pca_multi_model_visualization.json
-				1959_04_1_jf78_2D_pca_model_specified/
-			tsne/
-				1959_04_1_jf78_2D_tsne_multi_model_visualization.csv
-				1959_04_1_jf78_2D_tsne_multi_model_visualization.json
-				1959_04_1_jf78_2D_tsne_model_specified/
-			umap/
-				1959_04_1_jf78_2D_umap_multi_model_visualization.csv
-				1959_04_1_jf78_2D_umap_multi_model_visualization.json
-				1959_04_1_jf78_2D_umap_model_specified/
-		3D/
-			pca/
-				1959_04_1_jf78_3D_pca_multi_model_visualization.csv
-				1959_04_1_jf78_3D_pca_multi_model_visualization.json
-				1959_04_1_jf78_3D_pca_model_specified/
-			tsne/
-				1959_04_1_jf78_3D_tsne_multi_model_visualization.csv
-				1959_04_1_jf78_3D_tsne_multi_model_visualization.json
-				1959_04_1_jf78_3D_tsne_model_specified/
-			umap/
-				1959_04_1_jf78_3D_umap_multi_model_visualization.csv
-				1959_04_1_jf78_3D_umap_multi_model_visualization.json
-				1959_04_1_jf78_3D_umap_model_specified/
-	1959_04_1_jf78_model_data_word2vec_fasttext_bert/
-		1959_04_1_jf78_model_data_bert.json
-		1959_04_1_jf78_model_data_fasttext.json
-		1959_04_1_jf78_model_data_word2vec_fasttext_bert.json
-		1959_04_1_jf78_model_data_word2vec.json
-	1959_04_1_jf78_similarity_results_word2vec_all networks/
-		all_networks_人_1756178022683/
-		all_networks_人文_1756178094172/
-		all_networks_人文主義_1756178317886/
-		all_networks_人本_1756178169153/
-		all_networks_人本主義_1756178383375/
-		all_networks_人道_1756178228573/
-		all_networks_人道主義_1756178517211/
+The text preprocessing pipeline applies consistent tokenization across all years:
+- Chinese text segmentation using standard methods
+- No stopword removal (preserving historical language patterns)
+- Top 50 most frequent tokens tracked per model type
+- Statistical compilation of sentence counts and vocabulary size
 
-1959_05_1_jf79/
-	1959_05_1_jf79_embedding Visualization_2D_3D/
-		2D/
-			pca/
-				1959_05_1_jf79_2D_pca_multi_model_visualization.csv
-				1959_05_1_jf79_2D_pca_multi_model_visualization.json
-				1959_05_1_jf79_2D_pca_model_specified/
-			tsne/
-				1959_05_1_jf79_2D_tsne_multi_model_visualization.csv
-				1959_05_1_jf79_2D_tsne_multi_model_visualization.json
-				1959_05_1_jf79_2D_tsne_model_specified/
-			umap/
-				...
-		3D/
-			pca/
-				...
-			tsne/
-				...
-			umap/
-				...
-	1959_05_1_jf79_model_data_word2vec_fasttext_bert/
-		1959_05_1_jf79_model_data_bert.json
-		1959_05_1_jf79_model_data_fasttext.json
-		1959_05_1_jf79_model_data_word2vec_fasttext_bert.json
-		1959_05_1_jf79_model_data_word2vec.json
-```
+**Sample Statistics (1956)**:
+- Sentences: 1,708
+- Total Tokens: 36,845  
+- Unique Vocabulary: 39,403 tokens
 
-The `corpus/` folder contains the original text files for each issue, named by year, month, and issue (e.g., `1955_11_1_jf1.txt`).
+*Complete preprocessing specifications and yearly statistics available in [PREPROCESSING_SPECIFICATIONS.md](PREPROCESSING_SPECIFICATIONS.md)*
 
 ## Data Formats
 
-- **JSON/CSV:** Processed data, embeddings, and model outputs.
-- **TXT:** Original literary journal texts.
+- **TXT:** Original literary journal texts in the `corpus/` folder.
+- **JSON:** Processed data files containing structured analysis results, word embeddings, and model outputs in `rationality-related/` and `yearly-based-model-data/` folders.
 
-## Data Columns (for CSV/JSON)
+## How to Reuse This Dataset
 
-- `year`: Year of publication
-- `issue`: Issue number or identifier
-- `title`: Title of the work
-- `author`: Author name(s)
-- `text`: Original text content
-- `embedding`: Vector representation (if applicable)
-- `model`: Embedding/model type (e.g., BERT, word2vec, fastText)
+### Quick Start Guide
 
-*Note: Not all columns may be present in every file. See individual files for details.*
+1. **For Literary Analysis**: Use original text files in `corpus/` folder, organized chronologically from 1955-1961
+2. **For NLP Research**: Access processed embeddings in `yearly-based-model-data/` with three model types (Word2Vec, FastText, BERT)
+3. **For Historical Studies**: Focus on rationality-related analysis in the specialized `rationality-related/` folders
 
-## Example Usage
+### Understanding the Data Structure
 
-Researchers can use this dataset to:
+- **File Naming**: `YYYY-MM-first|second-issue-XXX.txt` (e.g., `1955-11-first-issue-001.txt`)
+- **Temporal Coverage**: 1955-1961 with varying completeness (see coverage table above)
+- **Language**: All texts in Traditional Chinese with UTF-8 encoding
+- **Format**: Plain text (.txt) for corpus; JSON for processed model data
 
-- Analyze the semantic context of humanism-related terms in Mahua literature
-- Visualize word embeddings and explore semantic shifts over time
-- Apply NLP models (e.g., BERT) to study contextual meanings in literary texts
+### Research Applications
 
-## License
+#### Computational Literary Studies
+- **Diachronic Analysis**: Track semantic shifts across the 6-year period using word embeddings
+- **Thematic Evolution**: Compare BERT contextual embeddings across years for concept analysis  
+- **Cross-temporal Comparison**: Use consistent preprocessing pipeline for reliable year-to-year comparisons
 
-This dataset is provided for academic and research purposes only. Please contact the author for permissions regarding redistribution or commercial use.
+#### Digital Humanities Methods
+- **Keyword Networks**: Utilize pre-computed embeddings for semantic similarity networks
+- **Topic Modeling**: Apply to chronologically organized corpus for temporal topic analysis
+- **Stylometric Analysis**: Compare linguistic features across different years and authors
 
-## Citation
+#### Historical and Cultural Studies  
+- **Post-colonial Literary History**: Examine evolving themes in Malayan Chinese literature
+- **Cultural Identity**: Analyze conceptual frameworks beyond traditional national/diasporic categories
+- **Comparative Literature**: Position within broader Southeast Asian Chinese literary traditions
 
+### Technical Implementation Guide
 
-If you use this dataset, please cite the project or contact the author for more information.
+#### Getting Started with Word Embeddings
+
+```python
+# Example: Loading preprocessed BERT embeddings for 1956
+import json
+with open('yearly-based-model-data/1956/bert_embeddings.json', 'r') as f:
+    data_1956 = json.load(f)
+    
+# Access tokenized text and embeddings
+tokens = data_1956['processed_tokens']
+embeddings = data_1956['embeddings']
+```
+
+#### Model Selection Guidelines
+
+| Research Goal | Recommended Model | Rationale |
+|--------------|------------------|-----------|
+| Semantic similarity analysis | **BERT** | Contextual embeddings capture nuanced meanings |
+| Cross-temporal comparison | **Word2Vec** | Consistent static embeddings across years |
+| Morphological analysis | **FastText** | Subword information for Chinese character analysis |
+| Historical language patterns | **Word2Vec/FastText** | Faster processing for large-scale analysis |
+
+*Complete model specifications and training parameters in [MODEL_TRAINING_SPECIFICATIONS.md](MODEL_TRAINING_SPECIFICATIONS.md)*
+
+### Technical Considerations and Requirements
+
+- **Encoding**: All text files use UTF-8 encoding; ensure your analysis tools support Chinese text processing
+- **Dependencies**: Processed embeddings require Python libraries (transformers, gensim) - see model specifications
+- **Hardware**: BERT processing benefits from GPU acceleration; Word2Vec/FastText run efficiently on CPU
+- **Historical Context**: Consider publication era (1955-1961) when interpreting linguistic variations and terminology
+- **Data Quality**: OCR-processed texts with manual verification; see [DATA_STRUCTURE.md](DATA_STRUCTURE.md) for quality notes
+
+### Reproducibility and Validation
+
+All preprocessing steps and model training parameters are documented to ensure reproducibility:
+- **Tokenization**: Consistent Chinese segmentation methods across all years
+- **Model Parameters**: Identical configurations for each model type (detailed in [MODEL_TRAINING_SPECIFICATIONS.md](MODEL_TRAINING_SPECIFICATIONS.md))
+- **Statistical Validation**: Complete token counts and vocabulary statistics per year (in [PREPROCESSING_SPECIFICATIONS.md](PREPROCESSING_SPECIFICATIONS.md))
+
+### Data Quality and Limitations
+
+**Strengths:**
+- Consistent OCR processing with manual verification
+- Systematic file organization and naming
+- Comprehensive documentation and metadata
+- Multiple embedding model types for comparison
+
+**Known Limitations:**
+- Pre-1955 issues not yet digitized
+- 1958 Q4 second-half issues missing from source archive  
+- 1961 coverage limited to January issue only
+- Historical orthography preserved (no modernization applied)
+
+*Complete coverage details and anomalies documented in [DATA_STRUCTURE.md](DATA_STRUCTURE.md)*
+
+## Data Schema and File Structure
+
+### Processed JSON Files Schema
+The `yearly-based-model-data/` directory contains structured JSON files with the following fields:
+
+- `year`: Publication year (1955-1961)
+- `processed_tokens`: List of segmented tokens from corpus text
+- `token_frequency`: Dictionary of top 50 most frequent tokens with counts
+- `sentence_count`: Number of sentences in the year's corpus
+- `total_tokens`: Total token count after segmentation  
+- `unique_vocabulary_count`: Number of unique tokens (complete vocabulary size)
+- `embeddings`: Model-specific vector representations
+- `model_type`: Embedding model identifier ("bert", "word2vec", "fasttext")
+
+### Raw Text Files
+- **Encoding**: UTF-8
+- **Format**: Plain text, one file per issue
+- **Content**: OCR-processed literary texts with manual verification
+- **Language**: Traditional Chinese characters
+
+*Complete data structure documentation in [DATA_STRUCTURE.md](DATA_STRUCTURE.md)*
+
+## Citation and Usage
+
+### How to Cite This Dataset
+
+If you use this dataset in your research, please cite:
+
+```
+Wong, Nicholas Y. H., Candy Ye Tsz Yu, and Allie Xiang Haiyin.
+"DH Mahua Literary Journal Dataset: Word Embeddings for Malayan Chinese Literature (1955-1961)."
+[Dataset] v1.2.0. University of Hong Kong, January 8, 2026.
+DOI: 10.5281/zenodo.18175387
+Funded by Hong Kong Research Grants Council ECS Grant No. 27609122.
+```
+
+### License and Permissions
+
+This dataset is provided for academic and research purposes. Commercial use or redistribution requires permission from the project author.
+
+### Acknowledgments
+
+**Funding**: Research Grants Council (RGC) of Hong Kong SAR, China - Early Career Scheme (ECS) Grant No. 27609122 for "Visualizing Keywords in Malaysian-Chinese Literary History via Digital Humanities Methods"
+
+**Contributing to the Special Collection**: This dataset supports the Journal of Open Humanities Data (JOHD) Special Collection on "Benchmarking in Digital Humanities" edited by Dr. Jenny C.Y. Kwok and Dr. Liam Jianliang Gao.
 
 ### Project Author
 
