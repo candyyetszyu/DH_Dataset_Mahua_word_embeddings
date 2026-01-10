@@ -6,7 +6,7 @@ This dataset contains text files from the Mahua (Malayan Chinese) literary journ
 
 ## Project Website
 
-For interactive visualizations and additional resources, visit: **https://dh-dataset-mahua-word-embeddings-lm.vercel.app/**
+For interactive visualizations and additional resources, visit: **https://dh-dataset-mahua-word-embeddings.vercel.app/**
 
 ## Project Aim
 
