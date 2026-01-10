@@ -166,19 +166,13 @@ All preprocessing steps and model training parameters are documented to ensure r
 - **Model Parameters**: Identical configurations for each model type (detailed in [MODEL_TRAINING_SPECIFICATIONS.md](MODEL_TRAINING_SPECIFICATIONS.md))
 - **Statistical Validation**: Complete token counts and vocabulary statistics per year (in [PREPROCESSING_SPECIFICATIONS.md](PREPROCESSING_SPECIFICATIONS.md))
 
-### Data Quality and Limitations
+### Data Quality
 
 **Strengths:**
 - Consistent OCR processing with manual verification
 - Systematic file organization and naming
 - Comprehensive documentation and metadata
 - Multiple embedding model types for comparison
-
-**Known Limitations:**
-- Pre-1955 issues not yet digitized
-- 1958 Q4 second-half issues missing from source archive  
-- 1961 coverage limited to January issue only
-- Historical orthography preserved (no modernization applied)
 
 *Complete coverage details and anomalies documented in [DATA_STRUCTURE.md](DATA_STRUCTURE.md)*
 
