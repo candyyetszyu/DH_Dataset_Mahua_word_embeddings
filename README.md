@@ -45,7 +45,7 @@ Edited by Dr Jenny C.Y. Kwok and Dr. Liam Jianliang Gao, this collection explore
 
 This dataset is organized into three main components. For complete structural details, file naming conventions, coverage statistics, and data quality notes, see **[DATA_STRUCTURE.md](DATA_STRUCTURE.md)**.
 
-- **corpus/:** Contains the original text files organized by year (1955-1961), with each file representing a specific half-month issue (1955–1958) or single monthly issue (1959 onward) following the `YYYY-MM-first|second-issue-XXX.txt` convention.
+- **corpus/:** Contains the original text files organized by year (1955-1961), with each file representing a specific half-month issue (1955–1958) or single monthly issue (November 1958 onward) following the `YYYY-MM-first|second-issue-XXX.txt` convention.
 - **rationality-related/:** Contains specialized folders for analysis of rationality-related content from specific issues (`1959_04_1_jf78` and `1959_05_1_jf79`), retained for historical traceability.
 - **yearly-based-model-data/:** Contains processed model data organized by year for embedding and analysis purposes.
 
@@ -56,7 +56,7 @@ This dataset is organized into three main components. For complete structural de
 | 1955 | 4 | 93,773 | Nov–Dec only |
 | 1956 | 24 | 647,956 | Complete coverage |
 | 1957 | 24 | 669,896 | Complete coverage |
-| 1958 | 21 | 617,044 | Missing Oct–Dec second halves |
+| 1958 | 21 | 617,044 | Complete coverage; monthly publication from November 1958 onward |
 | 1959 | 12 | 431,252 | Single monthly issues |
 | 1960 | 12 | 386,075 | Single monthly issues |
 | 1961 | 1 | 32,315 | Jan only |
