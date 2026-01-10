@@ -207,8 +207,8 @@ If you use this dataset in your research, please cite:
 ```
 Wong, Nicholas Y. H., Candy Ye Tsz Yu, and Allie Xiang Haiyin.
 "DH Mahua Literary Journal Dataset: Word Embeddings for Malayan Chinese Literature (1955-1961)."
-[Dataset] v1.2.0. University of Hong Kong, January 8, 2026.
-DOI: 10.5281/zenodo.18205166
+[Dataset] v1.2.1. University of Hong Kong, January 10, 2026.
+DOI: 10.5281/zenodo.18205257
 Funded by Hong Kong Research Grants Council ECS Grant No. 27609122.
 ```
 
